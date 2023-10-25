@@ -72,3 +72,6 @@ Password:admin
 ## Credit
 
 - **[Al Sayeed](https://github.com/alsayeedar/)**
+
+## Contact:
+[![Find me on Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/AlSayeedOfficial) [![Follow me on Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/AlSayeedAR) [![Join on Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/AlSayeedAR) [![Message me on WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/8801868188006) [![Visit my Website](https://img.shields.io/badge/website-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://www.priyotrick.com/)
