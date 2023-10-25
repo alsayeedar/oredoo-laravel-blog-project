@@ -18,11 +18,11 @@ A multi user blog project using Laravel 10 and Oredoo blog template
 
 - Clone this repository
 ```
-git clone https://github.com/alsayeedar/
+git clone https://github.com/alsayeedar/oredoo-laravel-blog-project.git
 ```
 - Change directory
 ```
-cd 
+cd oredoo-laravel-blog-project
 ```
 - Copy .env.example file
 ```
