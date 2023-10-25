@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 
-return [
 
+return [
+    'sitesettings' => \App\Models\SiteSetting::class,
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -70,7 +71,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Dhaka',
 
     /*
     |--------------------------------------------------------------------------

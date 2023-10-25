@@ -27,6 +27,11 @@ class User extends Authenticatable
         'profile',
         'about',
         'role',
+        'facebook',
+        'twitter',
+        'instagram',
+        'linkedin',
+        'youtube',
         'status',
         'password',
     ];
@@ -56,5 +61,17 @@ class User extends Authenticatable
         return Attribute::make(
             set: fn ($value) => Str::lower($value)
         );
+    }
+
+    public function posts() {
+        return $this->hasMany(Post::class);
+    }
+
+    public function comments() {
+        return $this->hasMany(Comment::class);
+    }
+
+    public function media() {
+        return $this->hasMany(Media::class);
     }
 }

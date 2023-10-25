@@ -27,4 +27,15 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    // public function render($request, Throwable $e)
+    // {
+    //     if ($this->isHttpException($e)) {
+    //         if (!request()->is('dashboard/*')) {
+    //             return response()->json(["status" => $e->getStatusCode()]);
+    //             return response()->view('errors.404', [], 404);
+    //         }
+    //     }
+    //     return parent::render($request, $e);
+    // }
 }

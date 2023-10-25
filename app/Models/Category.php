@@ -23,4 +23,8 @@ class Category extends Model
     protected $casts = [
         'status' => 'boolean',
     ];
+
+    public function posts() {
+        return $this->hasMany(Post::class);
+    }
 }

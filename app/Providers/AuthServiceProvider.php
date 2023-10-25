@@ -3,7 +3,10 @@
 namespace App\Providers;
 
 // use Illuminate\Support\Facades\Gate;
+
+use App\Models\User;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Gate;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -21,6 +24,25 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Gate::define("update-post", function (User $user, $post) {
+            if ($user->role == 3) {
+                return true;
+            }
+            return $user->id === $post->user_id;
+        });
+
+        Gate::define("update-comment", function (User $user, $comment) {
+            if ($user->role == 3) {
+                return true;
+            }
+            return $user->id === $comment->post->user_id;
+        });
+
+        Gate::define("update-media", function (User $user, $media) {
+            if ($user->role == 3) {
+                return true;
+            }
+            return $user->id === $media->user_id;
+        });
     }
 }
